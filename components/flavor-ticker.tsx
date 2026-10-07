@@ -29,17 +29,9 @@ export function FlavorTicker() {
             {phrases.map((phrase) => (
               <Fragment key={`${copy}-${phrase}`}>
                 <span className="ticker-phrase whitespace-nowrap">{phrase}</span>
-                <motion.span
-                  className="ticker-separator inline-block mx-6 select-none"
-                  animate={{ rotate: 360 }}
-                  transition={{
-                    duration: 6,
-                    ease: "linear",
-                    repeat: Infinity,
-                  }}
-                >
+                <span className="ticker-separator inline-block mx-6 select-none">
                   ✱
-                </motion.span>
+                </span>
               </Fragment>
             ))}
           </div>
